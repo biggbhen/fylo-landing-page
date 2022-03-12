@@ -18,12 +18,15 @@ h2{
  font-size: clamp(1.8rem, 5vw, 2.4rem);
  margin-bottom: 1.5rem;
 }
+h3{
+ font-size: clamp(1.8rem, 5vw, 2.2rem);
+ margin-bottom: 1.5rem;
+}
 
 .container{
- margin: auto;
+ /* margin: 2rem auto; */
  /* width: 90%; */
  max-width: 100vw;
- /* height: 80rem; */
  border: 3px solid green;
  /* padding: 0 20px; */
 }
@@ -81,6 +84,7 @@ height: 100%;
 
 /* sectionTwo */
 .boxTwo{
+ padding: 70px 40px;
   overflow: auto;
  display: grid;
  grid-template-columns: 1fr 1fr;
@@ -126,18 +130,62 @@ height: 100%;
 /* sectionThree */
 .boxThree{
  /* padding: 20px; */
+ background-color: #575989;
  overflow: auto;
  display: grid;
  grid-template-columns: 1fr 1fr;
- /* height: 400px; */
+ padding: 50px 40px;
  border: 1px solid green;
  margin-top: 3rem;
 }
+.boxThree * {
+ color:white ;
+}
+.signUpForm{
+ padding:40px  80px;
+}
 .signUpForm input[type='email']{
 width: 100%;
+padding: 10px;
 }
 .signUpForm button{
  display: block;
  padding: 5px;
- width: 40%;
+ width: 50%;
+ background-color:#2F65F9 ;
+}
+
+footer{
+ padding:70px 40px;
+ background-color: #07043B;
+ /* border: 2px solid red; */
+ overflow: auto;
+ display: flex;
+ justify-content: space-between;
+}
+footer > section{
+ /* border: 1px solid royalblue; */
+ width: 30%;
+}
+footer > section +section{
+ display: flex;
+ justify-content: space-between;
+width: 70%;
+}
+footer > section + section div{
+ padding-top:50px;
+border: 1px solid white;
+width: 32%;
+
+}
+footer *{
+ color: white;
+}
+ .logo{
+filter:  brightness(0) invert(1);
+}
+.socialMedia  img{
+ width: 50px;
+ border-radius: 50px;
+ float: left;
 }
