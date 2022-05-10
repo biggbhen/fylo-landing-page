@@ -201,11 +201,20 @@ footer {
   justify-content: space-between;
 }
 footer > * {
-  border: 1px solid royalblue;
+  margin: 1rem;
+  /* border: 1px solid royalblue; */
   width: 23%;
   color: white;
 }
-
+footer a {
+  color: white;
+}
+footer > div ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0.625rem;
+  /* border: 1px solid; */
+}
 .logo {
   filter: brightness(0) invert(1);
   width: clamp(5rem, 10vw, 8rem);
@@ -234,6 +243,12 @@ footer > * {
     display: grid;
     grid-template-columns: 1fr;
   }
+  footer {
+    display: flex;
+  }
+  footer > * {
+    width: 40%;
+  }
 }
 .boxOne .emailsBox {
   grid-row: 1;
@@ -251,5 +266,12 @@ footer > * {
   }
   .signUpForm button {
     width: 100%;
+  }
+  footer > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid;
+    width: 80%;
   }
 }
