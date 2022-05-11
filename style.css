@@ -203,7 +203,7 @@ footer {
 footer > * {
   margin: 1rem;
   /* border: 1px solid royalblue; */
-  width: 23%;
+  width: 20%;
   color: white;
 }
 footer a {
@@ -249,6 +249,19 @@ footer > div ul {
   footer > * {
     width: 40%;
   }
+  .signUpForm {
+    padding: 1.25rem;
+  }
+  h1 {
+    font-size: clamp(1.5rem, 3vw, 2.65rem);
+  }
+  p {
+    font-size: clamp(1rem, 2vw, 1.4rem);
+  }
+  h2 {
+    font-size: clamp(1.5rem, 3vw, 2.4rem);
+    margin-bottom: 1.5rem;
+  }
 }
 .boxOne .emailsBox {
   grid-row: 1;
@@ -266,6 +279,7 @@ footer > div ul {
   }
   .signUpForm button {
     width: 100%;
+    border: 1px solid black;
   }
   footer > * {
     display: flex;
