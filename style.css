@@ -233,7 +233,7 @@ footer > div ul li {
 }
 .socialMedia > ul {
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 @media (max-width: 790px) {
   .container {
@@ -266,9 +266,13 @@ footer > div ul li {
     font-size: clamp(1.5rem, 3vw, 2.4rem);
     margin-bottom: 1.5rem;
   }
-}
-.boxOne .emailsBox {
-  grid-row: 1;
+  .boxOne .emailsBox {
+    grid-row: 1;
+  }
+  .socialMedia > ul {
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 520px) {
@@ -296,5 +300,10 @@ footer > div ul li {
   footer > div ul li {
     align-items: space-around;
     margin: 1rem;
+  }
+
+  .socialMedia > ul {
+    flex-direction: column;
+    align-items: space-between;
   }
 }
