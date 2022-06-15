@@ -31,7 +31,7 @@ a {
 }
 span {
   font-size: clamp(0.8rem, 1.5vw, 1rem);
-  margin-left: 00.5rem;
+  margin-left: 0.5rem;
 }
 .container {
   /* margin: 2rem auto; */
@@ -41,19 +41,19 @@ span {
 
 /* header */
 header {
-  overflow: auto;
-  border-bottom: 2px solid grey;
+  border-bottom: 1px solid grey;
   /* border: 2px solid orange; */
-  /* position: fixed; */
+
   display: flex;
-  width: 100%;
-  padding: 20px 40px;
+  /* width: 100%; */
+  padding: 10px 20px;
 }
 header > figure {
   width: 65%;
 }
 header > figure > img {
-  width: clamp(80px, 10vw, 100px);
+  /* border: 1px solid; */
+  width: clamp(5rem, 8vw, 6rem);
 }
 header ul {
   width: 35%;
@@ -179,8 +179,8 @@ button:hover {
 }
 .signUpForm {
   margin: 1rem 0;
-  padding: 20px 40px;
-  /* border: 1px solid; */
+  padding: 5px 10px;
+  border: 1px solid;
 }
 .signUpForm input[type='email'] {
   width: 100%;
@@ -205,7 +205,7 @@ footer {
   justify-content: space-between;
 }
 footer > * {
-  /* margin: 1rem; */
+  margin-bottom: 1rem;
   /* border: 1px solid royalblue; */
   width: 25%;
   color: white;
@@ -261,7 +261,7 @@ footer > div ul li {
     width: 40%;
   }
   .signUpForm {
-    padding: 1.25rem;
+    padding: 10px;
   }
   h1 {
     font-size: clamp(1.5rem, 3vw, 2.65rem);
@@ -277,7 +277,6 @@ footer > div ul li {
     grid-row: 1;
   }
   .socialMedia > ul {
-    flex-direction: column;
     justify-content: space-between;
   }
   /* .contactNumber span {
@@ -302,18 +301,11 @@ footer > div ul li {
   footer > * {
     display: flex;
     flex-direction: column;
-    align-items: center;
     /* border: 1px solid; */
     width: 100%;
-    /* justify-content: space-between; */
   }
   footer > div ul li {
     align-items: space-around;
     margin: 1rem;
-  }
-
-  .socialMedia > ul {
-    flex-direction: column;
-    align-items: space-between;
   }
 }
