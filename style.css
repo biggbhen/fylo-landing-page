@@ -84,9 +84,7 @@ button:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-/* .boxOne > section {
-  border: 2px solid pink;
-} */
+
 .secure {
   padding: clamp(2.2rem, 10vw, 6rem) 0;
 }
@@ -95,11 +93,12 @@ button:hover {
   margin-bottom: 0.8rem;
 }
 .secure input[type='email'] {
-  padding: 5px;
+  outline: none;
+  padding: 10px;
   width: 50%;
 }
 .secure button {
-  padding: 5px;
+  padding: 11px;
   width: 40%;
 }
 
@@ -165,14 +164,11 @@ button:hover {
 
 /* sectionThree */
 .boxThree {
-  /* padding: 20px; */
   background-color: #575989;
-  overflow: auto;
+  /* overflow: auto; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 50px 40px;
-  /* border: 1px solid green; */
-  /* margin-top: 3rem; */
 }
 .boxThree * {
   color: white;
@@ -180,9 +176,10 @@ button:hover {
 .signUpForm {
   margin: 1rem 0;
   padding: 5px 10px;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 .signUpForm input[type='email'] {
+  outline: none;
   width: 100%;
   padding: 10px;
   margin-bottom: 1rem;
@@ -198,15 +195,12 @@ button:hover {
 footer {
   padding: 2rem 2rem;
   background-color: #07043b;
-  /* border: 2px solid red; */
-  /* overflow: auto; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 footer > * {
   margin-bottom: 1rem;
-  /* border: 1px solid royalblue; */
   width: 25%;
   color: white;
 }
@@ -216,7 +210,8 @@ footer a {
 footer > div ul {
   display: flex;
   flex-direction: column;
-  padding: 0.625rem;
+  /* padding: 0.625rem; */
+  /* border: 1px solid black; */
 }
 footer > div ul li {
   margin-bottom: 1rem;
@@ -236,7 +231,6 @@ footer > div ul li {
 
 .socialMedia img {
   width: 30px;
-  /* border-radius: 50px; */
 }
 .socialMedia > ul {
   flex-direction: row;
@@ -259,6 +253,7 @@ footer > div ul li {
   }
   footer > * {
     width: 40%;
+    /* border: 1px solid black; */
   }
   .signUpForm {
     padding: 10px;
@@ -277,11 +272,8 @@ footer > div ul li {
     grid-row: 1;
   }
   .socialMedia > ul {
-    justify-content: space-between;
+    flex-direction: column;
   }
-  /* .contactNumber span {
-    display: block;
-  }*/
 }
 
 @media (max-width: 520px) {
@@ -306,6 +298,9 @@ footer > div ul li {
   }
   footer > div ul li {
     align-items: space-around;
-    margin: 1rem;
+    /* margin: 1rem; */
+  }
+  .socialMedia > ul {
+    flex-direction: row;
   }
 }
